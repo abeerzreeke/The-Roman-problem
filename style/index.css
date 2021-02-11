@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    outline: none;
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    display: block;
+    align-content: center;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+    font-size: 30px;
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/roman.jpg);
+    background-size: cover;
+    filter: grayscale(50%);
+    padding: 0 50px;
+}
+
+.header {
+    display: inline-block;
+    padding: 15px;
+    text-align: center;
+    margin: 25px auto;
+    width: 100%;
+    color: white;
+    background: #0000007f;
+}
+
+.footer {
+    background: #0000007f;
+    margin: 25px auto 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    margin-top: 12%;
+}
+
+.version.web {
+    display: block;
+}
+
+.version.mobile {
+    display: none;
+}
+
+form { 
+    margin: 25px auto;
+    display: block;
+    padding: 25px;
+    background: #0000007f;
+    width: 75%;
+    color: white;
+}
+
+#number_to_convert {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    color: white;
+    font-weight: 600;
+    border: 2px solid;
+    border-radius: 5px;
+    margin: 25px 0;
+}
+
+#number_to_convert.invalid {
+    border: 2px solid red;
+}
+
+.section.submit {
+    text-align: right;
+}
+
+input[type="submit"] {
+    color: white;
+    padding: 5px;
+    background-color: #593c00;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.exit {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/roman.jpg);
+    background-size: cover;
+    filter: grayscale(50%);
+    height: 100vh;
+}
+
+
+.exit h1, 
+.exit h3 {
+    display: inline-block;
+    padding: 15px;
+    text-align: center;
+    margin: 25px auto;
+    width: 100%;
+    color: white;
+    background: #0000007f;
+}
+
+.exit button {
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+}
+
+strong{
+    color: white;
+}
+@media only screen and (max-width: 400px) {
+
+    .header {
+        margin: 0 auto 25px;
+    }
+
+    .container {
+        font-size: 16px;
+        padding: 0;
+    }
+
+    form {
+        margin: 25px 0;
+        width: 100%;
+        border: none;
+        border-radius: 0;
+    }
+
+    #number_to_convert {
+        border: 1px solid;
+    }
+
+    .footer {
+        background: #0000007f;
+        margin: 25px auto 0;
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .version.web {
+        display: none; 
+    }
+
+    .version.mobile {
+        display: block; 
+    }
+
+}
